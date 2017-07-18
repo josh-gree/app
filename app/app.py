@@ -13,9 +13,7 @@ def means(fname):
     
     cols = df.columns
     mean = df.mean(axis=0)
-    for col in cols:
-        print(col)
-        print(mean[col])
+    return dict(mean)
 
 if __name__ == '__main__':
   fire.Fire(means)
